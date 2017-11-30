@@ -76,30 +76,30 @@ Toru Nagashima
 zsjforcn
 */
 
-var Parser = require('./jsparser/jsstate').Parser
+var Parser = require('./jsstate').Parser
 
 // mixin the other files onto parser
-require('./jsparser/jsparseutil')
-require('./jsparser/jsstatement')
-require('./jsparser/jscomments')
-require('./jsparser/jslval')
-require('./jsparser/jsexpression')
-require('./jsparser/jslocation')
+require('./jsparseutil')
+require('./jsstatement')
+require('./jscomments')
+require('./jslval')
+require('./jsexpression')
+require('./jslocation')
 
-exports.Parser = require('./jsparser/jsstate').Parser
-exports.plugins = require('./jsparser/jsstate').plugins
-exports.defaultOptions = require('./jsparser/jsoptions').defaultOptions
-exports.Node = require('./jsparser/jsnode')
-exports.TokenType = require('./jsparser/jstokentype').TokenType
-exports.tokTypes = require('./jsparser/jstokentype').types
-exports.TokContect = require('./jsparser/jstokencontext').TokContext
-exports.tokContexts = require('./jsparser/jstokencontext')
-exports.isIdentifierChar = require('./jsparser/jsidentifier').isIdentifierChar
-exports.isIdentifierStart = require('./jsparser/jsidentifier').isIdentifierStart
-exports.Token = require('./jsparser/jstokenize').Token
-exports.isNewLine = require('./jsparser/jswhitespace').isNewLine
-exports.lineBreak = require('./jsparser/jswhitespace').lineBreak
-exports.lineBreakG = require('./jsparser/jswhitespace').lineBreakG
+exports.Parser = require('./jsstate').Parser
+exports.plugins = require('./jsstate').plugins
+exports.defaultOptions = require('./jsoptions').defaultOptions
+exports.Node = require('./jsnode')
+exports.TokenType = require('./jstokentype').TokenType
+exports.tokTypes = require('./jstokentype').types
+exports.TokContect = require('./jstokencontext').TokContext
+exports.tokContexts = require('./jstokencontext')
+exports.isIdentifierChar = require('./jsidentifier').isIdentifierChar
+exports.isIdentifierStart = require('./jsidentifier').isIdentifierStart
+exports.Token = require('./jstokenize').Token
+exports.isNewLine = require('./jswhitespace').isNewLine
+exports.lineBreak = require('./jswhitespace').lineBreak
+exports.lineBreakG = require('./jswhitespace').lineBreakG
 exports.version = "3.1.0"
 // The main exported interface (under `self.acorn` when in the
 // browser) is a `parse` function that takes a code string and
